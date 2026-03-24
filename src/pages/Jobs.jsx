@@ -14,7 +14,7 @@ function Jobs() {
 
   const [search, setSearch] = useState("");
 
-  // 👉 NEW (form ke liye)
+ 
   const [showForm, setShowForm] = useState(false);
   const [selectedJob, setSelectedJob] = useState("");
 
@@ -54,7 +54,7 @@ function Jobs() {
                   <p>{job.company}</p>
                   <p>{job.location}</p>
 
-                  {/* 👉 UPDATED BUTTON */}
+
                   <button
                     className="cta-button"
                     onClick={() => {
@@ -68,7 +68,7 @@ function Jobs() {
               ))}
             </div>
 
-            {/* 👉 SIMPLE FORM */}
+          
             {showForm && (
               <div style={{ marginTop: "30px", color: "white" }}>
                 <h2>Apply for {selectedJob}</h2>

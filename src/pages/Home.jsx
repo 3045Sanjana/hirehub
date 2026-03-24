@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom"; // <-- ye add karo
+import { useNavigate } from "react-router-dom"; 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
 import girlImg from "../assets/images/templatemo-futuristic-girl.jpg";
 
 function Home() {
-  const navigate = useNavigate(); // <-- hook initialize karo
+  const navigate = useNavigate(); 
 
   const goToJobs = () => {
-    navigate("/jobs"); // <-- Jobs page ka route
+    navigate("/jobs"); 
   };
 
   return (
@@ -40,7 +40,7 @@ function Home() {
 
             {/* FEATURES SECTION */}
             <section className="features">
-              {/* Your feature cards */}
+              
             </section>
 
           </div>
