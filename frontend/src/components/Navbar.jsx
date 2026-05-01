@@ -15,6 +15,9 @@ function Navbar() {
             <Link to="/jobs">Jobs</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
+
+            {/* 👇 NEW LINK ADD */}
+            <Link to="/applications">My Applications</Link>
           </div>
 
         </nav>

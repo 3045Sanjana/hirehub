@@ -1,0 +1,79 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  font-family: system-ui, sans-serif;
+}
+
+/* 🔹 BASE */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  width: 1100px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* 🔹 HEADINGS */
+h1 {
+  color: var(--text-h);
+  margin: 30px 0;
+}
+
+/* 🔹 JOB GRID */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* 🔹 JOB CARD */
+.feature-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔹 TEXT */
+.feature-card h3 {
+  margin-bottom: 5px;
+}
+
+.feature-card p {
+  margin: 2px 0;
+}
+
+/* 🔥 BUTTON FIX (IMPORTANT) */
+.feature-card .cta-button {
+  width: 110px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  margin-top: 15px;   /* 👈 यही fix है */
+}
+
+/* 🔹 HOVER */
+.cta-button:hover {
+  opacity: 0.85;
+}
